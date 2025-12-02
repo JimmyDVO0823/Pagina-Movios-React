@@ -1,0 +1,25 @@
+.photoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 1. Ancho de 1/4 (25%) de la pantalla */
+    width: 25vw; 
+    height: 40vw;
+    border-radius: 5%;
+    
+    /* 2. Fondo azul */
+    background-color: rgb(75, 219, 216); /* O puedes usar un valor hexadecimal como #0000FF */
+    
+    /* 3. Letra negrilla/bold */
+    font-weight: bold;
+    
+    /* Opcional: Para centrar el texto o mejorar la visualización */
+    color: white; /* Para que el texto sea visible en fondo azul */
+    padding: 10px; /* Espaciado interno para que el contenido no toque los bordes */
+}
+
+.photoCard img {
+    max-width: 100%; /* Asegura que la imagen no se salga del div */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    margin-bottom: 5px; /* Pequeño espacio entre la imagen y el label */
+}

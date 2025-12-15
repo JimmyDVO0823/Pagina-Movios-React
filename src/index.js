@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDom from "react-dom/client";
 import { Button } from "./Button";
 import { Card } from "./Task";
@@ -14,6 +14,9 @@ const prevent = (e) => {
 
 function Message() {
   const [message, setMessage] = useState(0);
+  useEffect(() => {
+    console.log("El mensaje ha cambiado");
+  }, [message]);
   return (
     <div>
       <input onChange={e => setMessage(e.target.value)}></input>
